@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: 'Dosis', Arial, sans-serif;    
+  color: #6d6d6d;
+
+  background-color: #ffffff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;   
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 320px;
+  margin: 0 auto;  
+}
+
+@media (min-width: 1170px) {
+  .wrapper {
+    width: 1140px;
+    margin: 0 auto;
+
+    padding: 0 15px 0;
+  }  
+}
+
+.start-title__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  margin: 0;
+  padding: 0; 
+  
+  color: #7ea2b3;
+}
+
+.section__title {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-size: 40px;
+  line-height: 50px;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.start__title { 
+  padding-top: 48px;
+  padding-bottom: 34px;
+}
+
+.item__title { 
+  font-size: 24px;
+  line-height: 30px;
+}
+
+@media (min-width: 1170px) { 
+  .choose-meal {
+    display: flex;
+    flex-direction: column;
+  }
+  .location {
+    display: flex;
+    flex-direction: column;
+  }
+  .advantages {
+    display: flex;
+    flex-direction: column;
+  }
+  .start-section__position {
+    margin-bottom: 40px;
+  }
+}
+
+.description {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 1170px) {
+  .description {
+    padding-top: 12px;
+    padding-bottom: 24px;
+  }
+}
+
+.description__wrapper {
+  padding: 20px;  
+
+  background-color: #f6fcff;
+}
+
+@media (min-width: 1170px) {
+  .description__wrapper {    
+    align-self: flex-end;
+    box-sizing: border-box;   
+    
+    margin-top: -260px;  
+    width: 650px;
+    min-height: 300px;
+    padding: 65px 80px 65px 80px;
+
+    box-shadow: -12.99px 7.5px 30px 0px rgba(126, 162, 179, 0.42);
+  }
+  .description-order {    
+    align-self: flex-start;
+
+    box-shadow: 13.595px 6.339px 30px 0px rgba(126, 162, 179, 0.42)
+  }
+  .location__image {
+    align-self: flex-end;
+  }  
+}
+
+.button {
+  display: inline-block;
+
+  padding: 14px 31px;  
+
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 16px;  
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+
+  background-color: #97b621;
+
+  border: none;
+  cursor: pointer;
+  border-radius: 35px;
+}
+
+.watch { 
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (min-width: 1170px) {
+  .watch {
+    padding: 0 0 50px 0;    
+  }
+}
+
+.watch__button {
+  position: relative;
+
+  padding-left: 53px;
+  padding-right: 31px;
+  color: #97b621;
+  border: 1px solid #97b621;
+
+  background-color: transparent;
+}
+
+@media (min-width: 1170px) {
+  .watch__button::before {    
+    content: "";
+    position: absolute; 
+    left: 29px;
+   
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 11px solid #97b621;
+    border-bottom: 10px solid transparent;      
+  }
+}
+
+
+/* -- Вторая часть --*/
+.staff-pick {
+  background-color: #f7f9ee;
+}
+
+.staff-pick__wrapper {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1170px) {
+  .staff-pick__wrapper {
+    align-items: stretch;
+
+    width: 1140px;
+
+    padding: 0 15px 0;
+  }
+}
+
+.staff-pick__title { 
+  padding-top: 48px;
+  padding-bottom: 34px;
+}
+
+@media (min-width: 1170px) {
+  .staff-pick__title {
+    align-items: center;
+  }
+}
+
+
+
+
+.staff-pick__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+} 
+
+@media (min-width: 1170px) {
+  .staff-pick__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.staff-pick__item {
+  display: flex;
+  flex-direction: column;  
+}
+
+@media (min-width: 1170px) {
+  .staff-pick__item {
+    width: 262px;
+  }
+}
+
+.staff-pick__description {
+  display: none;
+
+  margin: 0;
+  padding: 20px;
+}
+
+.staff-pick__title {
+  padding: 20px;
+}
+
+.choose__button {
+  font-size: 12px;  
+  line-height: 22px;
+
+  box-shadow: 0px 11px 33px 0px rgba(30, 55, 67, 0.26);
+}
+
+.staff-pick__button {
+  margin: 0 40px 40px;
+}
