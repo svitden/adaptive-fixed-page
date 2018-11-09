@@ -36,11 +36,6 @@ a {
   }  
 }
 
-.start-title__wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 .title {
   margin: 0;
   padding: 0; 
@@ -56,17 +51,19 @@ a {
   line-height: 50px;
   font-family: 'Oswald', Arial, sans-serif;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 1px;
 }
 
 .start__title { 
-  padding-top: 48px;
+  padding-top: 53px;
   padding-bottom: 34px;
 }
 
 .item__title { 
   font-size: 24px;
   line-height: 30px;
+  text-align: center;
 }
 
 @media (min-width: 1170px) { 
@@ -172,8 +169,7 @@ a {
   background-color: transparent;
 }
 
-@media (min-width: 1170px) {
-  .watch__button::before {    
+.watch__button::before {    
     content: "";
     position: absolute; 
     left: 29px;
@@ -184,8 +180,7 @@ a {
     border-left: 11px solid #97b621;
     border-bottom: 10px solid transparent;      
   }
-}
-
+  
 
 /* -- Вторая часть --*/
 .staff-pick {
@@ -208,22 +203,8 @@ a {
     width: 1140px;
 
     padding: 0 15px 0;
-  }
+  } 
 }
-
-.staff-pick__title { 
-  padding-top: 48px;
-  padding-bottom: 34px;
-}
-
-@media (min-width: 1170px) {
-  .staff-pick__title {
-    align-items: center;
-  }
-}
-
-
-
 
 .staff-pick__list{
   margin: 0;
@@ -240,24 +221,22 @@ a {
 
 .staff-pick__item {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;   
 }
 
-@media (min-width: 1170px) {
-  .staff-pick__item {
-    width: 262px;
-  }
-}
-
-.staff-pick__description {
-  display: none;
-
-  margin: 0;
+.staff-pick__item-title {
   padding: 20px;
 }
 
 .staff-pick__title {
   padding: 20px;
+}
+
+@media (min-width: 1170px){
+   .staff-pick__title { 
+    padding-top: 39px;
+    padding-bottom: 34px;
+  }
 }
 
 .choose__button {
@@ -267,6 +246,36 @@ a {
   box-shadow: 0px 11px 33px 0px rgba(30, 55, 67, 0.26);
 }
 
+@media (min-width: 1170px){
+  .choose__button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
 .staff-pick__button {
-  margin: 0 40px 40px;
+  margin: 0 40px 50px;
+}
+
+.staff-pick__description {
+  visibility: hidden;
+  display: flex;  
+  align-items: center;
+  box-sizing: border-box;  
+  width: 262px;
+  min-height: 262px;
+
+  margin: 0;
+  padding: 30px;
+  margin-top: -262px;
+  text-align: center;      
+  
+  line-height: 35px;
+  color: #ffffff; 
+
+  background-color: rgba(21,51,68,0.6);
+}
+
+.staff-pick__item:hover .staff-pick__description{
+  visibility: visible;
 }
