@@ -22,9 +22,10 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
+.wrapper { 
   width: 320px;
-  margin: 0 auto;  
+  margin: 0 auto;
+  
 }
 
 @media (min-width: 1170px) {
@@ -62,8 +63,7 @@ a {
 
 .item__title { 
   font-size: 24px;
-  line-height: 30px;
-  text-align: center;
+  line-height: 30px;  
 }
 
 @media (min-width: 1170px) { 
@@ -110,7 +110,7 @@ a {
     box-sizing: border-box;   
     
     margin-top: -260px;  
-    width: 650px;
+    width: 57%;
     min-height: 300px;
     padding: 65px 80px 65px 80px;
 
@@ -145,11 +145,15 @@ a {
   border-radius: 35px;
 }
 
+.button:hover {
+  background-color: #819b1d;
+}
+
 .watch { 
   margin: 0;
   padding: 0;
   padding: 20px;
-  text-align: center;
+  text-align: center;  
 }
 
 @media (min-width: 1170px) {
@@ -169,6 +173,11 @@ a {
   background-color: transparent;
 }
 
+.watch__button:hover {
+  background-color: transparent;
+  color: #819b1d;
+}
+
 .watch__button::before {    
     content: "";
     position: absolute; 
@@ -182,7 +191,7 @@ a {
   }
   
 
-/* -- Вторая часть --*/
+
 .staff-pick {
   background-color: #f7f9ee;
 }
@@ -273,9 +282,20 @@ a {
   line-height: 35px;
   color: #ffffff; 
 
-  background-color: rgba(21,51,68,0.6);
+  background-color: rgba(21,51,68,0.6);  
 }
 
 .staff-pick__item:hover .staff-pick__description{
   visibility: visible;
+  animation-name: appear;
+  animation-duration: 0.7s;
+}
+
+@keyframes appear{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
