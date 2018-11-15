@@ -1,3 +1,3 @@
-# Учебный одностраничный проект 
+# Учебный проект - адаптивная страница с фиксировнной шириной 
 
-* Студент: [Svetlana Denisenko](https://www.linkedin.com/in/svetlanadenisenko/).
+
